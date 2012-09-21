@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">安徽省两会工作用图</string>
+    <string name="app_name">安徽省两会工作用图</string>
+	<color name="headcolor">#EE1C25</color>
+	<color name="bottomcolor">#806C64</color>
+</resources>
