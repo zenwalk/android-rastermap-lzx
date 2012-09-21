@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.poqop"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8"></uses-sdk>
+    
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT"/>
+    <application android:icon="@drawable/icon" android:label="安徽省两会工作用图" android:debuggable="true">
+        <activity android:name=".document.views.PdfViewerActivity" android:configChanges="orientation|keyboardHidden">
+
+            	<intent-filter>
+            		<action android:name="android.intent.action.VIEW" />
+            		<category
+            			android:name="android.intent.category.DEFAULT" />
+            		<category
+            			android:name="android.intent.category.BROWSABLE" />
+            		<data android:mimeType="application/pdf" />
+            	</intent-filter>
+        </activity>
+        <activity android:name=".document.MainBrowserActivity" android:label="安徽省两会工作用图">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest> 
