@@ -1,0 +1,51 @@
+<TabHost
+       xmlns:android = "http://schemas.android.com/apk/res/android"
+       android:layout_width = "fill_parent"
+       android:layout_height = "fill_parent"
+       android:id = "@+id/v_tabhost"
+>  
+       
+       <LinearLayout
+                android:orientation = "vertical"
+                android:layout_width = "fill_parent" 
+              android:layout_height = "fill_parent"
+       >
+                <FrameLayout
+                            android:id = "@android:id/tabcontent"
+                         android:layout_width = "fill_parent" 
+               android:layout_height = "fill_parent"
+               android:layout_weight = "1"
+                >
+
+
+                         <LinearLayout android:id="@+id/tab3" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+							</LinearLayout>
+							<LinearLayout
+                             android:id="@+id/tab2"
+                             android:layout_width="fill_parent"
+                             android:layout_height="fill_parent"
+                             android:orientation="vertical" ></LinearLayout>
+
+                         
+
+               
+                                                
+                <LinearLayout android:id="@+id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1" android:orientation="vertical"></LinearLayout>
+                
+                </FrameLayout>
+
+
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:background="#e60012"
+                    android:clipChildren="true"
+                    android:tabStripEnabled="true" >
+
+                </TabWidget>
+
+       </LinearLayout >
+</TabHost >
