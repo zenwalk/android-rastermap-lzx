@@ -26,6 +26,8 @@ public  class MainPagesjt extends Activity{
 		 super.onCreate(savedInstanceState);
 		 setContentView(R.layout.main);
 		 
+		 
+		 
 		  final LayoutInflater inflater = LayoutInflater.from ( this );
 		 final TabHost tabhost = (TabHost)findViewById(R.id.v_tabhost);
 	        TabWidget tw = (TabWidget)findViewById(android.R.id.tabs);
