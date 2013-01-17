@@ -13,6 +13,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.graphics.PointF;
 import android.util.FloatMath;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -67,8 +68,18 @@ public class ActivityMap extends Activity {
         String path = Environment.getExternalStorageDirectory().toString() ; //»ñµÃSDCardÄ¿Â¼ 
         Bitmap bmpDefaultPic = null;
         String filePath=path+"/"+value+".jpg";
-        bmpDefaultPic = BitmapFactory.decodeFile(filePath,null);
-        view.setImageBitmap(bmpDefaultPic);
+        try
+        {
+        	 bmpDefaultPic = BitmapFactory.decodeFile(filePath,null);
+             view.setImageBitmap(bmpDefaultPic);
+        	
+        }
+        catch(Exception ex)
+        {
+        	
+        	Log.e("error", ex.toString());
+        }
+       
      //*/   
         
         
