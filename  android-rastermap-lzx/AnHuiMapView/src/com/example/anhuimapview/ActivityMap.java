@@ -60,15 +60,16 @@ public class ActivityMap extends Activity {
         
         ImageView view = (ImageView) findViewById(R.id.imageView1);
         
-   /* 从Sd卡中掉图片
+   // 从Sd卡中掉图片
         Intent intent=getIntent();         
         String value=intent.getStringExtra("diqu");
         
         String path = Environment.getExternalStorageDirectory().toString() ; //获得SDCard目录 
         Bitmap bmpDefaultPic = null;
-        bmpDefaultPic = BitmapFactory.decodeFile(path+value+".jpg",null);
+        String filePath=path+"/"+value+".jpg";
+        bmpDefaultPic = BitmapFactory.decodeFile(filePath,null);
         view.setImageBitmap(bmpDefaultPic);
-     */   
+     //*/   
         
         
 		view.setOnTouchListener(new OnTouchListener() {
