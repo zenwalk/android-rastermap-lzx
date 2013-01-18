@@ -85,7 +85,7 @@ public class Activitymapchoose extends Activity {
 				    float ychange=start.y-event.getY();
 					if(xchange>=-5&&xchange<=5 &&ychange>=-5&&ychange<=5)
 					{
-						Toast.makeText(Activitymapchoose.this, "hehe", Toast.LENGTH_SHORT).show();
+						//Toast.makeText(Activitymapchoose.this, "hehe", Toast.LENGTH_SHORT).show();
 						Activitymapchoose.this.setResult(RESULT_OK, intent);
 						Activitymapchoose.this.finish();
 					}
