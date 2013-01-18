@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="styleName">
+        <item name="android:background">@drawable/maininterfaceh</item>
+        <item name="android:gravity">fill_vertical</item>
+    </style>
+</resources>
