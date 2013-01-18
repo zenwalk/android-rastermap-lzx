@@ -17,7 +17,7 @@
     <Button
         android1:id="@+id/button1"
         android1:layout_width="wrap_content"
-        android1:layout_height="wrap_content"
+        android1:layout_height="20dp"
         android1:layout_alignParentLeft="true"
         android1:layout_alignParentTop="true"
         android1:background="@drawable/buttonbackxml" />
@@ -25,7 +25,7 @@
     <ImageView
         android1:id="@+id/imageView1"
         android1:layout_width="wrap_content"
-        android1:layout_height="20dp"
+        android1:layout_height="wrap_content"
         android1:layout_below="@+id/textView1"
         android1:layout_centerHorizontal="true"
         android1:layout_marginTop="21dp"
